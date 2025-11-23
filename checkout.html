@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="asset/image/logo furni.png" alt="Furniro Logo" width="50px">
+            <h2>Furniro</h2>
+        </div>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_shop.html">Shop</a></li>
+                <li><a href="contact_us.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="contact_us.html"><i class="user"><img src="asset/image/Vector.png" alt="User Icon" width="20px" height="20px"></i></a>
+            <a href="index_shop.html"><i class="search"><img src="asset/image/Vector search.png" alt="Search Icon" width="20px" height="20px"></i></a>
+            <a href="index_shop.html"><i class="heart"><img src="asset/image/Vector love.png" alt="Wishlist Icon" width="20px" height="20px"></i></a>
+            <a href="index_shop.html"><i class="cart"><img src="asset/image/Vector shop.png" alt="Cart Icon" width="20px" height="20px"></i></a>
+        </div>
+    </header>
+
+    <header class="hero" role="banner">
+        <div class="logo"><img src="asset/image/logo furni.png" alt="Furniro Logo"></div>
+        <h1>Checkout</h1>
+        <div class="crumb">Home &gt; Checkout</div>
+    </header>
+    <main class="main">
+        <!-- LEFT: Billing details form -->
+        <section class="billing" aria-labelledby="billing-title">
+            <h2 id="billing-title">Billing details</h2>
+            <form id="checkoutForm" class="checkout" autocomplete="on" novalidate>
+
+                <div>
+                    <div class="row-2">
+                        <div>
+                            <label class="field-label" for="firstName">First Name</label>
+                            <input id="firstName" name="firstName" type="text" placeholder="First Name" required />
+                        </div>
+                        <div>
+                            <label class="field-label" for="lastName">Last Name</label>
+                            <input id="lastName" name="lastName" type="text" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="field-label" for="company">Company Name (Optional)</label>
+                    <input id="company" name="company" type="text" placeholder="Company Name (Optional)" />
+                </div>
+
+                <div>
+                    <label class="field-label" for="country">Country / Region</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select country</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="US">United States</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="CA">Canada</option>
+                        <option value="AU">Australia</option>
+                        <option value="IN">India</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="KE">Kenya</option>
+                        <option value="GH">Ghana</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="field-label" for="address">Street address</label>
+                    <input id="address" name="address" type="text" placeholder="Street address" required />
+                </div>
+
+                <div>
+                    <label class="field-label" for="city">Town / City</label>
+                    <input id="city" name="city" type="text" placeholder="Town / City" required />
+                </div>
+
+                <div>
+                    <label class="field-label" for="province">Province</label>
+                    <select id="province" name="province" required>
+                        <option value="">Select Province</option>
+                        <option>Western Province</option>
+                        <option>Central Province</option>
+                        <option>Eastern Province</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="field-label" for="zip">ZIP code</label>
+                    <input id="zip" name="zip" type="text" placeholder="ZIP code" required />
+                </div>
+
+                <div>
+                    <label class="field-label" for="phone">Phone</label>
+                    <input id="phone" name="phone" type="text" placeholder="Phone" required />
+                </div>
+
+                <div>
+                    <label class="field-label" for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="Email address" required />
+                </div>
+
+                <div>
+                    <label class="field-label" for="note">Additional information</label>
+                    <textarea id="note" name="note" placeholder="Additional information (order notes)"
+                        rows="3"></textarea>
+                </div>
+
+                <!-- Place order button sits inside the form so validation works -->
+                <div style="margin-top:6px">
+
+                </div>
+
+            </form>
+        </section>
+
+        <!-- RIGHT: Order summary and payment -->
+        <aside class="summary" aria-labelledby="order-title">
+            <div class="panel">
+                <h3 id="order-title">Product</h3>
+
+                <div class="line">
+                    <div>Asgaard sofa <small style="color:#888">× 1</small></div>
+                    <div>Rs. 250,000.00</div>
+                </div>
+                <div class="line">
+                    <div>Subtotal</div>
+                    <div>Rs. 250,000.00</div>
+                </div>
+                <div class="total">
+                    <div>Total</div>
+                    <div>Rs. 250,000.00</div>
+                </div>
+
+                <div class="payment" aria-label="Payment methods">
+                    <label><input type="radio" name="payment" value="bank" required form="checkoutForm"> Direct Bank
+                        Transfer</label>
+                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment
+                        reference. Your order will not be shipped until the funds have cleared in our account.</p>
+
+                    <label><input type="radio" name="payment" value="bank2" form="checkoutForm"> Direct Bank
+                        Transfer</label>
+                    <label><input type="radio" name="payment" value="cod" form="checkoutForm"> Cash On Delivery</label>
+                </div>
+
+                <p style="font-size:12px;color:#666;margin-top:12px">Your personal data will be used to support your
+                    experience throughout this website, to manage access to your account, and for other purposes
+                    described in our privacy policy.</p>
+                <button form="checkoutForm" type="submit" class="place-order">Place order</button>
+
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+        <div>
+            <img src="asset/image/cup img.png" alt="High Quality Icon">
+            <p>High Quality</p>
+            <span>crafted from top materials</span>
+        </div>
+        <div>
+            <img src="asset/image/mark img 1.png" alt="Warranty Icon">
+            <p>Warranty Protection</p>
+            <span>Over 2 years</span>
+        </div>
+        <div>
+            <img src="asset/image/hand img1.png" alt="Free Shipping Icon">
+            <p>Free Shipping</p>
+            <span>Order over 150 $</span>
+        </div>
+        <div>
+            <img src="asset/image/headphone img1.png" alt="Support Icon">
+            <p>24 / 7 Support</p>
+            <span>Dedicated support</span>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Logo + Address -->
+            <div class="footer-logo">
+                <h2>Funiro.</h2>
+                <p>
+                    400 University Drive Suite 200 Coral Gables,<br>
+                    FL 33134 USA
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+                <h4 class="footer-title">Links</h4>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="index_shop.html">
+                        <li>Shop</li>
+                    </a>
+                    <a href="contact_us.html">
+                        <li>About</li>
+                    </a>
+                    <a href="contact_us.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!-- Help -->
+            <div class="footer-help">
+                <h4 class="footer-title">Help</h4>
+                <ul>
+                    <li>Payment Options</li>
+                    <li>Returns</li>
+                    <li>Privacy Policies</li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Newsletter</h4>
+                <div class="newsletter-input">
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            2023 funiro. All rights reserved
+        </div>
+    </footer>
+
+    <!-- CTA PROFILE -->
+    <button class="cta-profile" id="ctaBtn" aria-label="Open help message" title="Help">
+        <img src="asset/image/miracle.jpg" alt="profile">
+    </button>
+
+    <!-- POPUP CARD -->
+    <div class="cta-card" id="ctaCard" role="dialog" aria-live="polite" aria-hidden="true" aria-label="Tip">
+        <div class="avatar-sm" aria-hidden="true">
+            <img src="asset/image/miracle.jpg" alt="Profile">
+        </div>
+
+        <div class="card-body">
+            <div class="card-text" id="ctaText" aria-atomic="true">
+                <!-- text will be typed by JS -->
+            </div>
+
+            <div class="card-meta">
+                <div class="small-muted">Tip • Auto disappears</div>
+                <button class="cta-close" id="ctaCloseBtn" aria-label="Close message">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ---------- Hamburger Menu Toggle ---------- */
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Form validation and friendly focusing
+        (function () {
+            const form = document.getElementById('checkoutForm');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Use built-in validity first
+                if (!form.checkValidity()) {
+                    // find first invalid field and focus
+                    const firstInvalid = form.querySelector(':invalid');
+                    firstInvalid.focus();
+                    // show native message if available
+                    firstInvalid.reportValidity();
+                    return;
+                }
+
+                // Ensure a payment option (radio) is checked
+                const payment = document.querySelector('input[name="payment"]:checked');
+                if (!payment) {
+                    // find payment area and scroll into view
+                    const paymentArea = document.querySelector('.payment');
+                    paymentArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    alert('Please choose a payment method before placing the order.');
+                    return;
+                }
+
+                // All good: gather the values (example) and show success
+                const data = new FormData(form);
+                data.append('payment', payment.value);
+
+                // Here you would send data to your server. For demo we just show success.
+                alert('Order placed successfully. Thank you — this is a demo submission.');
+                form.reset();
+            });
+        })();
+
+        /* ---------- CTA Profile Configuration ---------- */
+        const MESSAGE = "👋 Welcome! Kindly fill the form and place order 🛒";
+        const AUTO_HIDE_MS = 4500;
+        const SHOW_DELAY_MS = 800;
+        const LOCALSTORAGE_KEY = "cta_seen_v1";
+
+        const ctaBtn = document.getElementById("ctaBtn");
+        const ctaCard = document.getElementById("ctaCard");
+        const ctaText = document.getElementById("ctaText");
+        const ctaCloseBtn = document.getElementById("ctaCloseBtn");
+
+        let hideTimer = null;
+        let typingTimer = null;
+        let isTyping = false;
+
+        /* ---------- Utility: play short chime using WebAudio ---------- */
+        function playChime() {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const o = ctx.createOscillator();
+                const g = ctx.createGain();
+                o.type = "sine";
+                o.frequency.value = 880;
+                g.gain.value = 0.0001;
+                o.connect(g);
+                g.connect(ctx.destination);
+                o.start();
+
+                g.gain.exponentialRampToValueAtTime(0.12, ctx.currentTime + 0.01);
+                o.frequency.exponentialRampToValueAtTime(1100, ctx.currentTime + 0.08);
+                g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.28);
+                o.stop(ctx.currentTime + 0.3);
+            } catch (err) {
+                // fail silently if audio not available
+            }
+        }
+
+        /* ---------- Typing effect ---------- */
+        function typeMessage(targetEl, message, speed = 28) {
+            cancelTyping();
+            targetEl.textContent = "";
+            isTyping = true;
+            let i = 0;
+            const caret = document.createElement("span");
+            caret.className = "typing-caret";
+            targetEl.appendChild(caret);
+
+            typingTimer = setInterval(() => {
+                if (i >= message.length) {
+                    clearInterval(typingTimer);
+                    typingTimer = null;
+                    isTyping = false;
+                    setTimeout(() => { if (caret.parentNode) caret.remove(); }, 800);
+                    return;
+                }
+                caret.insertAdjacentText("beforebegin", message[i]);
+                i++;
+            }, speed);
+        }
+
+        function cancelTyping() {
+            if (typingTimer) {
+                clearInterval(typingTimer);
+                typingTimer = null;
+                isTyping = false;
+            }
+        }
+
+        /* ---------- Show / Hide logic ---------- */
+        function showCard(playSound = true, withTyping = true) {
+            ctaBtn.classList.remove("bounce");
+            void ctaBtn.offsetWidth;
+            ctaBtn.classList.add("bounce");
+
+            ctaCard.classList.add("show");
+            ctaCard.setAttribute("aria-hidden", "false");
+
+            if (withTyping) {
+                typeMessage(ctaText, MESSAGE);
+            } else {
+                cancelTyping();
+                ctaText.textContent = MESSAGE;
+            }
+
+            if (playSound) playChime();
+
+            clearTimeout(hideTimer);
+            hideTimer = setTimeout(() => {
+                hideCard();
+            }, AUTO_HIDE_MS);
+
+            try {
+                localStorage.setItem(LOCALSTORAGE_KEY, "1");
+            } catch (e) {}
+        }
+
+        function hideCard() {
+            cancelTyping();
+            ctaCard.classList.remove("show");
+            ctaCard.setAttribute("aria-hidden", "true");
+            clearTimeout(hideTimer);
+        }
+
+        /* ---------- Events ---------- */
+        ctaBtn.addEventListener("click", (e) => {
+            const wasShown = ctaCard.classList.contains("show");
+            if (wasShown) {
+                hideCard();
+            } else {
+                showCard(true, true);
+            }
+        });
+
+        ctaCloseBtn.addEventListener("click", (e) => {
+            hideCard();
+        });
+
+        /* ---------- Auto-show on first visit only ---------- */
+        window.addEventListener("load", () => {
+            let seen = false;
+            try {
+                seen = !!localStorage.getItem(LOCALSTORAGE_KEY);
+            } catch (e) {
+                seen = false;
+            }
+
+            if (!seen) {
+                setTimeout(() => {
+                    showCard(true, true);
+                }, SHOW_DELAY_MS);
+            }
+        });
+
+        /* Optional: keyboard accessibility */
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "h" && (e.ctrlKey || e.metaKey)) {
+                e.preventDefault();
+                if (ctaCard.classList.contains("show")) hideCard();
+                else showCard(true, false);
+            }
+        });
+    </script>
+</body>
+
+</html>
