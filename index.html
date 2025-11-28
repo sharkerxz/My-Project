@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro - Furniture Store</title>
     <link rel="stylesheet" href="index.css">
-
-    
 </head>
 <body>
     <!-- Header -->
@@ -43,9 +41,13 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-image">
-            <div class="hero-content">
+            <div class="hero-content scroll-animate">
                 <p class="new">New Arrival</p>
-                <h1>Discover Our<br>New Collection</h1>
+                <h1>
+                    <span class="typing-container">
+                        <span class="typing-cursor"></span>
+                    </span>
+                </h1>
                 <p class="desc">Elevate your interior with refined pieces that blend comfort, simplicity, and modern charm.</p>
                 <a href="index_shop.html"><button class="btn">BUY NOW</button></a>
             </div>
@@ -54,18 +56,18 @@
 
     <!-- Browse Section -->
     <section class="browse">
-        <h2>Browse The Range</h2>
-        <p class="subtext">Fresh styles. Clean designs. Made to fit your lifestyle perfectly.</p>
+        <h2 class="scroll-animate">Browse The Range</h2>
+        <p class="subtext scroll-animate">Fresh styles. Clean designs. Made to fit your lifestyle perfectly.</p>
         <div class="categories">
-            <div class="card">
+            <div class="card scroll-animate">
                 <img src="asset/image/dining1.png" alt="Dining">
                 <h3>Dining</h3>
             </div>
-            <div class="card">
+            <div class="card scroll-animate">
                 <img src="asset/image/living1.png" alt="Living">
                 <h3>Living</h3>
             </div>
-            <div class="card">
+            <div class="card scroll-animate">
                 <img src="asset/image/bedroom img1.png" alt="Bedroom">
                 <h3>Bedroom</h3>
             </div>
@@ -74,9 +76,9 @@
 
     <!-- Products Section -->
     <section class="products">
-        <h2>Our Products</h2>
+        <h2 class="scroll-animate">Our Products</h2>
         <div class="product-grid">
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/sythe1.png" alt="Syltherine">
                 <div class="badge">-30%</div>
                 <div class="overlay">
@@ -93,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/levi1.png" alt="Leviosa">
                 <div class="overlay">
                     <a href="shop_cart.html"><button>Add to cart</button></a>
@@ -108,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/lolito1.png" alt="Lolito">
                 <div class="badge">-50%</div>
                 <div class="overlay">
@@ -125,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/respira1.jpg" alt="Respira">
                 <div class="badge new">New</div>
                 <div class="overlay">
@@ -141,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/grifo1.png" alt="Grifo">
                 <div class="overlay">
                     <a href="shop_cart.html"><button>Add to cart</button></a>
@@ -156,7 +158,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/mugo1.png" alt="Muggo">
                 <div class="badge new">New</div>
                 <div class="overlay">
@@ -172,7 +174,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/pingky1.jpg" alt="Pingky">
                 <div class="badge">-50%</div>
                 <div class="overlay">
@@ -189,7 +191,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card scroll-animate">
                 <img src="asset/image/potty1.jpg" alt="Potty">
                 <div class="badge new">New</div>
                 <div class="overlay">
@@ -207,28 +209,25 @@
         </div>
 
         <div class="show-more">
-            <a href="index_shop.html"><button>Show More</button></a>
+            <a href="index_shop.html"><button class="btn">Show More</button></a>
         </div>
     </section>
 
     <!-- BEAUTIFUL ROOMS SECTION -->
     <section class="room-preview">
-        <div class="room-text">
+        <div class="room-text scroll-animate">
             <h2>50+ Beautiful rooms inspiration</h2>
             <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
             <a href="#" class="btn-explore">Explore More</a>
         </div>
 
         <div class="rooms-grid">
-            
-            <!-- Auto Sliding Bedroom -->
-            <div class="room-slider">
+            <div class="room-slider scroll-animate">
                 <div class="slides">
                     <div class="slide"><img src="asset/image/inner room1.png" alt="Bedroom 1"></div>
                     <div class="slide"><img src="asset/image/inner room2.png" alt="Bedroom 2"></div>
                     <div class="slide"><img src="asset/image/inner room 3.png" alt="Bedroom 3"></div>
                 </div>
-
                 <div class="slider-caption">
                     <small>01 — Bed Room</small>
                     <h3>Inner Peace</h3>
@@ -236,25 +235,21 @@
                 </div>
             </div>
 
-            <!-- Second Static Image -->
-            <div class="room-static">
+            <div class="room-static scroll-animate">
                 <img src="asset/image/inner room2.png" alt="Second room">
             </div>
 
-            <!-- Pagination Dots Below Both Images -->
             <div class="slider-dots">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
         </div>
     </section>
 
     <!-- FUNIRO FURNITURE GRID -->
-    <section class="furniture-section">
+    <section class="furniture-section scroll-animate">
         <h2>Share your setup with <br> <b>#FuniroFurniture</b></h2>
-
         <div>
             <img src="asset/image/heros1.png" alt="Furniture showcase">
         </div>
@@ -262,19 +257,14 @@
 
     <!-- FOOTER SECTION -->
     <footer>
+        <div class="particles" id="particles"></div>
         <div class="footer-container">
-            
-            <!-- Logo + Address -->
-            <div class="footer-logo">
+            <div class="footer-logo scroll-animate">
                 <h2>Funiro.</h2>
-                <p>
-                    400 University Drive Suite 200 Coral Gables,<br>
-                    FL 33134 USA
-                </p>
+                <p>400 University Drive Suite 200 Coral Gables,<br>FL 33134 USA</p>
             </div>
 
-            <!-- Links -->
-            <div class="footer-links">
+            <div class="footer-links scroll-animate">
                 <h4 class="footer-title">Links</h4>
                 <ul>
                     <a href="index.html"><li>Home</li></a>
@@ -284,8 +274,7 @@
                 </ul>
             </div>
 
-            <!-- Help -->
-            <div class="footer-help">
+            <div class="footer-help scroll-animate">
                 <h4 class="footer-title">Help</h4>
                 <ul>
                     <li>Payment Options</li>
@@ -294,15 +283,13 @@
                 </ul>
             </div>
 
-            <!-- Newsletter -->
-            <div class="footer-newsletter">
+            <div class="footer-newsletter scroll-animate">
                 <h4 class="footer-title">Newsletter</h4>
                 <div class="newsletter-input">
                     <input type="text" placeholder="Enter Your Email Address">
                     <button>SUBSCRIBE</button>
                 </div>
             </div>
-
         </div>
 
         <div class="footer-bottom">
@@ -345,10 +332,9 @@
     <script>
         /* ---------- Configuration ---------- */
         const MESSAGE = "👋 Welcome! Kindly click on any product image to add to cart 🛒";
-        const AUTO_HIDE_MS = 4500;     // time popup stays visible before auto-hide
-        const SHOW_DELAY_MS = 800;     // delay before initial show on first visit
-        const LOCALSTORAGE_KEY = "cta_seen_v1"; // toggle "only once" behavior
-        /* ----------------------------------- */
+        const AUTO_HIDE_MS = 4500;
+        const SHOW_DELAY_MS = 800;
+        const LOCALSTORAGE_KEY = "cta_seen_v1";
 
         const ctaBtn = document.getElementById("ctaBtn");
         const ctaCard = document.getElementById("ctaCard");
@@ -363,13 +349,96 @@
         let typingTimer = null;
         let isTyping = false;
 
-        /* ---------- Hamburger Menu Toggle ---------- */
+        /* ---------- Enhanced Typing Animation ---------- */
+        function initTypingAnimation() {
+            const typingContainer = document.querySelector('.typing-container');
+            const text = "Discover Our\nNew Collection";
+            const lines = text.split('\n');
+            let currentLine = 0;
+            let currentChar = 0;
+            let isDeleting = false;
+            let typingSpeed = 100;
+            let pauseTime = 2000;
+            
+            function type() {
+                const currentText = lines[currentLine].substring(0, currentChar);
+                typingContainer.innerHTML = currentText + '<span class="typing-cursor"></span>';
+                
+                if (!isDeleting && currentChar < lines[currentLine].length) {
+                    currentChar++;
+                    setTimeout(type, typingSpeed);
+                } else if (isDeleting && currentChar > 0) {
+                    currentChar--;
+                    setTimeout(type, typingSpeed / 2);
+                } else {
+                    isDeleting = !isDeleting;
+                    if (!isDeleting) {
+                        currentLine = (currentLine + 1) % lines.length;
+                    }
+                    setTimeout(type, pauseTime);
+                }
+            }
+            
+            setTimeout(type, 1000);
+        }
+
+        /* ---------- Scroll Animation ---------- */
+        function initScrollAnimation() {
+            const scrollElements = document.querySelectorAll('.scroll-animate');
+            
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+            
+            const displayScrollElement = (element) => {
+                element.classList.add('visible');
+            };
+            
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.2)) {
+                        displayScrollElement(el);
+                    }
+                });
+            };
+            
+            handleScrollAnimation();
+            window.addEventListener('scroll', handleScrollAnimation);
+        }
+
+        /* ---------- Particle Animation ---------- */
+        function initParticleAnimation() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = Math.random() * 10 + 5;
+                const left = Math.random() * 100;
+                const animationDuration = Math.random() * 20 + 10;
+                const animationDelay = Math.random() * 5;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${left}%`;
+                particle.style.animationDuration = `${animationDuration}s`;
+                particle.style.animationDelay = `${animationDelay}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        /* ---------- Hamburger Menu ---------- */
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when clicking on a link
         document.querySelectorAll('nav ul li a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -378,56 +447,29 @@
         });
 
         /* ---------- Welcome Popup ---------- */
-        // Show popup on page load
         window.addEventListener('load', () => {
             setTimeout(() => {
                 welcomePopup.classList.add('active');
             }, 1000);
         });
 
-        // Close popup when clicking close button
         closePopup.addEventListener('click', () => {
             welcomePopup.classList.remove('active');
         });
 
-        // Close popup when clicking outside
         welcomePopup.addEventListener('click', (e) => {
             if (e.target === welcomePopup) {
                 welcomePopup.classList.remove('active');
             }
         });
 
-        // Auto close popup after 5 seconds
         window.addEventListener('load', () => {
             setTimeout(() => {
                 welcomePopup.classList.remove('active');
             }, 5000);
         });
 
-        /* ---------- Utility: play short chime using WebAudio ---------- */
-        function playChime(){
-            try {
-                const ctx = new (window.AudioContext || window.webkitAudioContext)();
-                const o = ctx.createOscillator();
-                const g = ctx.createGain();
-                o.type = "sine";
-                o.frequency.value = 880; // start freq
-                g.gain.value = 0.0001;
-                o.connect(g); g.connect(ctx.destination);
-                o.start();
-
-                // ramp up quickly and down for a pleasant ping
-                g.gain.exponentialRampToValueAtTime(0.12, ctx.currentTime + 0.01);
-                o.frequency.exponentialRampToValueAtTime(1100, ctx.currentTime + 0.08);
-                g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.28);
-                o.stop(ctx.currentTime + 0.3);
-            } catch (err) {
-                // fail silently if audio not available
-                //console.warn("Audio play failed", err);
-            }
-        }
-
-        /* ---------- Typing effect ---------- */
+        /* ---------- CTA Functions ---------- */
         function typeMessage(targetEl, message, speed = 28){
             cancelTyping();
             targetEl.textContent = "";
@@ -442,11 +484,9 @@
                     clearInterval(typingTimer);
                     typingTimer = null;
                     isTyping = false;
-                    // keep caret for a little while then remove
                     setTimeout(()=> { if(caret.parentNode) caret.remove(); }, 800);
                     return;
                 }
-                // insert char before caret
                 caret.insertAdjacentText("beforebegin", message[i]);
                 i++;
             }, speed);
@@ -460,19 +500,14 @@
             }
         }
 
-        /* ---------- Show / Hide logic ---------- */
         function showCard(playSound = true, withTyping = true){
-            // small bounce animation to CTA
             ctaBtn.classList.remove("bounce");
-            // restart
             void ctaBtn.offsetWidth;
             ctaBtn.classList.add("bounce");
 
-            // set aria and class
             ctaCard.classList.add("show");
             ctaCard.setAttribute("aria-hidden", "false");
 
-            // start typing
             if (withTyping){
                 typeMessage(ctaText, MESSAGE);
             } else {
@@ -480,67 +515,50 @@
                 ctaText.textContent = MESSAGE;
             }
 
-            // play sound
-            if (playSound) playChime();
-
-            // auto-hide timer
             clearTimeout(hideTimer);
             hideTimer = setTimeout(()=> {
                 hideCard();
             }, AUTO_HIDE_MS);
 
-            // mark as seen in localStorage (first auto popup)
             try { localStorage.setItem(LOCALSTORAGE_KEY, "1"); } catch(e){}
         }
 
         function hideCard(){
             cancelTyping();
-            // fade out
             ctaCard.classList.remove("show");
             ctaCard.setAttribute("aria-hidden", "true");
             clearTimeout(hideTimer);
         }
 
-        /* ---------- Events ---------- */
-
-        // On CTA click — always re-open (even if user already saw)
         ctaBtn.addEventListener("click", (e) => {
             const wasShown = ctaCard.classList.contains("show");
             if (wasShown){
-                // if visible, clicking toggles off
                 hideCard();
             } else {
                 showCard(true, true);
             }
         });
 
-        // Close button
         ctaCloseBtn.addEventListener("click", (e) => {
             hideCard();
         });
 
-        /* ---------- Auto-show on first visit only ---------- */
         window.addEventListener("load", () => {
             let seen = false;
             try { seen = !!localStorage.getItem(LOCALSTORAGE_KEY); } catch(e) { seen = false; }
 
             if (!seen){
-                // show automatically once with a small delay
                 setTimeout(() => {
                     showCard(true, true);
                 }, SHOW_DELAY_MS);
-            } else {
-                // we won't auto show again; still let the user click CTA to open
             }
         });
 
-        /* Optional: keyboard accessibility — press 'h' to toggle widget (handy for dev/test) */
-        window.addEventListener("keydown", (e) => {
-            if (e.key === "h" && (e.ctrlKey || e.metaKey)){ // Ctrl/Cmd + H
-                e.preventDefault();
-                if (ctaCard.classList.contains("show")) hideCard();
-                else showCard(true, false);
-            }
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', () => {
+            initTypingAnimation();
+            initScrollAnimation();
+            initParticleAnimation();
         });
     </script>
 </body>
