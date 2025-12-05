@@ -3,12 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Page</title>
-  <link rel="stylesheet" href="contact_us.css">
-  <!-- Remix Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-
-  
+  <title>About Page</title>
+  <link rel="stylesheet" href="about.css" />
 </head>
 <body>
 
@@ -43,76 +39,34 @@
   <!-- HERO -->
   <div class="hero">
     <div class="logo"><img src="asset/image/logo furni.png" alt="Furniro Logo"></div>
-    <h1>Contact</h1>
-    <div class="breadcrumb">Home > Contact</div>
+    <h1>About Us</h1>
+    <div class="breadcrumb">Home > About</div>
   </div>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact-container">
-    <h2>Get In Touch With Us</h2>
+  <!-- ABOUT SECTION -->
+  <section class="about-container">
+    <h2>Our Story</h2>
     <p>
-      For More Information About Our Product & Services, Please Feel Free To Drop Us <br>
-      An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
+      Welcome to Furniro, where furniture meets artistry. For over a decade, we have been dedicated to creating beautiful, functional, and sustainable furniture that transforms houses into homes.
     </p>
-
-    <div class="grid-box">
-      
-      <!-- LEFT INFO -->
-      <div class="info-box">
-
-        <div class="info-item">
-          <div class="info-title">
-            <i class="ri-map-pin-fill"></i>
-            <h3>Address</h3>
-          </div>
-          <p>
-            236 5th SE Avenue, New <br>
-            York NY10000, United <br>
-            States
-          </p>
-        </div>
-
-        <div class="info-item">
-          <div class="info-title">
-            <i class="ri-phone-fill"></i>
-            <h3>Phone</h3>
-          </div>
-          <p>
-            Mobile: (+84) 546-6789 <br>
-            Hotline: (+84) 456-6789
-          </p>
-        </div>
-
-        <div class="info-item">
-          <div class="info-title">
-            <i class="ri-time-fill"></i>
-            <h3>Working Time</h3>
-          </div>
-          <p>
-            Monday–Friday: 9:00 – 22:00 <br>
-            Saturday–Sunday: 9:00 – 21:00
-          </p>
-        </div>
-
+    
+    <div class="about-content">
+      <div class="about-mission">
+        <h3>Our Mission</h3>
+        <p>
+          To design and craft furniture that blends timeless elegance with modern functionality, while maintaining our commitment to sustainability and exceptional craftsmanship.
+        </p>
       </div>
-
-      <!-- FORM -->
-      <form>
-        <label>Your name</label>
-        <input type="text" required placeholder="Abc" />
-
-        <label>Email address</label>
-        <input type="email" required placeholder="Abc@def.com" />
-
-        <label>Subject</label>
-        <input type="text" required placeholder="This is an optional" />
-
-        <label>Message</label>
-        <textarea required placeholder="Hi! I'd like to ask about"></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-
+      
+      <div class="about-values">
+        <h3>Our Values</h3>
+        <ul>
+          <li><strong>Quality:</strong> Every piece is crafted with precision and care</li>
+          <li><strong>Sustainability:</strong> We use responsibly sourced materials</li>
+          <li><strong>Innovation:</strong> Constantly evolving designs for modern living</li>
+          <li><strong>Customer Focus:</strong> Your satisfaction is our priority</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -215,7 +169,7 @@
 
 <script>
 /* ---------- Configuration ---------- */
-const MESSAGE = "👋 Welcome! Kindly contact us for any inquiries.";
+const MESSAGE = "👋 Welcome! Learn more about our story and values.";
 const AUTO_HIDE_MS = 4500;     // time popup stays visible before auto-hide
 const SHOW_DELAY_MS = 800;     // delay before initial show on first visit
 const LOCALSTORAGE_KEY = "cta_seen_v1"; // toggle "only once" behavior
